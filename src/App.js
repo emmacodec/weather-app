@@ -10,10 +10,10 @@ const url ='https://api.openweathermap.org/data/2.5/weather?q=Lagos,nigeria&unit
 const searchLocation = (event) => {
   if(event.key === 'Enter') {
     axios.get(url).then((response) =>{
-      setData(response.data)
-      console.log(response.data)
+      setData(response.data);
+      console.log(response.data);
     })
-    setLocation('')
+    setLocation('');
   }
   
 }
